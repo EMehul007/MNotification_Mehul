@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e("*********","-------------");
+        Log.e("**********","-------------");
         ButterKnife.bind(this);
         mFirebaseInstance = FirebaseDatabase.getInstance();
         // get reference to 'users' node
