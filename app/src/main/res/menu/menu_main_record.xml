@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Record.RecordMainActivity">
+    <item
+        android:id="@+id/record_action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/record_action_show_folder"
+        android:orderInCategory="100"
+        android:title="@string/open_recording_folder"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/record_action_call"
+        android:checkable="true"
+        android:orderInCategory="100"
+        android:title="@string/call_recording"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/record_action_about"
+        android:orderInCategory="100"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>
