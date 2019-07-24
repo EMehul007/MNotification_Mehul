@@ -1,5 +1,6 @@
 package com.example.mnotification.CallRecord.Activity;
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -508,6 +509,7 @@ public class CallRecordActivity extends AppCompatActivity implements SharedPrefe
         super.onStop();
     }
 
+    @SuppressLint("RestrictedApi")
     void updatePanel() {
         fab_panel.setVisibility(show ? View.VISIBLE : View.GONE);
         if (encoding >= 0) {
@@ -523,6 +525,7 @@ public class CallRecordActivity extends AppCompatActivity implements SharedPrefe
             status.setText(text);
             fab.setVisibility(show ? View.VISIBLE : View.GONE);
             fab_stop.setVisibility(View.VISIBLE);
+
         }
         if (recording == null) {
             fab.setVisibility(View.GONE);
