@@ -49,6 +49,7 @@ public class RecentCallActivity extends AppCompatActivity {
     TextView count;
     ImageView fav;
     ProgressBar progressBar;
+
     EditText name;
     View msg;
     int c = 0;
@@ -75,6 +76,8 @@ public class RecentCallActivity extends AppCompatActivity {
     }
 
     public static Rect getOnScreenRect(Window w) {
+
+        //************
         int[] loc = new int[2];
         View v = w.getDecorView();
         v.getLocationOnScreen(loc);
